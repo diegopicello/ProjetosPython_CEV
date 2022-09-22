@@ -17,5 +17,3 @@ else:
             print('{} = {}'.format(c, fat))
         c -= 1
 print('o resultado é {}.'.format(fat))
-
-
