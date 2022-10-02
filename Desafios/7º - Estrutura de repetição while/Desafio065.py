@@ -4,7 +4,7 @@ soma += primeiro
 menor = maior = primeiro
 cont = 1
 sn = str(input('Quer continuar?[s/n] '))
-while 'n' not in sn:
+while sn not in 'Nn':
     num = float(input('Digite um número: '))
     soma += num
     if num < menor:
