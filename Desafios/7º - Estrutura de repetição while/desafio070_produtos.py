@@ -14,13 +14,9 @@ while True:
     total += preco
     if preco > 1000:
         c1000 += 1
-    if c == 1:
+    if c == 1 or preco < maisbarato:
         maisbarato = preco
         nomemaisbarato = produto
-    else:
-        if preco < maisbarato:
-            maisbarato = preco
-            nomemaisbarato = produto
     escolha = ' '
     while escolha not in 'SsNn':
         escolha = str(input('Quer continuar? [S/N] ')).upper().strip()[0]
