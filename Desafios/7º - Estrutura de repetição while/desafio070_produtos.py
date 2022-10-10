@@ -4,7 +4,6 @@ A) qual é o total gasto na compra
 B) quantos produtos custam mais de R$1000.
 C) qual é o nome do produto mais barato."""
 c = total = c1000 = maisbarato = 0
-escolha = 'S'
 print('=' * 21)
 print("    Didico's shop")
 print('=' * 21)
@@ -22,12 +21,12 @@ while True:
         if preco < maisbarato:
             maisbarato = preco
             nomemaisbarato = produto
-    escolha = str(input('Quer continuar? [S/N] ')).upper().strip()[0]
+    escolha = ' '
     while escolha not in 'SsNn':
         escolha = str(input('Quer continuar? [S/N] ')).upper().strip()[0]
     if escolha in 'Nn':
         break
-print('=' * 10, 'Fim do programa' ,'=' * 10)
+print('{:=^40}'.format('Fim do programa'))
 print(f'O total da compra foi de R${total:.2f}')
 if c1000 == 1:
     print('Há um produto custando mais de R$1000.00.')
