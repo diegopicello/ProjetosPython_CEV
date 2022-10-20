@@ -15,3 +15,4 @@ for pos in range(0, len(precos)):
         print(f'{precos[pos]:.<22}', end = '')
     else:
         print(f'R${precos[pos]:>6.2f}')
+print(30 * '-')

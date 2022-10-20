@@ -15,3 +15,6 @@ print(20 * '=-')
 for c in range(0, len(precos), 2):
     print(precos[c].ljust(27, '.') + 'R$' + precos[c+1].rjust(11))
 print(20 * '=-')
+'''print(f'{precos[c]:.<30}) e:
+print(f'{precos[c]:>10})
+também alinham!'''
