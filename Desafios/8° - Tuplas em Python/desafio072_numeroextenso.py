@@ -12,4 +12,3 @@ while True:
     print('Tente novamente!', end = ' ')
 print(num)
 print(f'Você digitou o número {extenso[num]}.')
-
