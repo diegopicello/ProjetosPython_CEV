@@ -21,6 +21,8 @@ if 3 in numeros:
 else:
     print('O valor 3 não foi digitado.')
 for c in range(0, 4):
+    print('Os valores pares foram: ')
     if numeros[c] % 2 == 0:
         totpar += 1
+        print(numeros[c], end = ' ')
 print(f'Ao todo, há {totpar} valores pares.')
