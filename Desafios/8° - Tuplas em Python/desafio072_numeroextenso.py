@@ -7,7 +7,7 @@ extenso = ('zero', 'um', 'dois', 'três', 'quatro',
         'dezenove', 'vinte')
 while True:
     num = int(input('Digite um número entre 0 e 20: '))
-    if num >= 0 and num <= 20:
+    if 0 <= num <= 20:
         break
     print('Tente novamente!', end = ' ')
 print(num)
