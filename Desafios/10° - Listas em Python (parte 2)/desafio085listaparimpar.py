@@ -15,4 +15,4 @@ todos.append(pares)
 todos.append(impares)
 print(f'Os valores pares digitados foram: {pares}')
 print(f'Os valores ímpares digitadosforam: {impares}')
-print(f'A lista total é: {todos}')
+print(f'A lista total é: {todos}') #OBS: poderia ter declarado a lista maior diretamente no início.
