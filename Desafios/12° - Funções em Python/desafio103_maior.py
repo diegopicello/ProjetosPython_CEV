@@ -14,12 +14,12 @@ def maiornum(* valores):
         elif num > maior:
             maior = num
     if len(valores) > 1:
-        print(f'Foram informados {len(valores)} ao todo;', flush = True)
+        print(f'Foram informados {len(valores)} valores ao todo;', flush = True)
         sleep(0.8)
         print(f'O maior valor foi {maior}', flush = True)
         sleep(0.8)
     elif len(valores) == 1:
-        print(f'Apenas um valor foi informado, e este valor é {maior}', flush = True)
+        print(f'Apenas um valor foi informado, e este valor é {maior};', flush = True)
         sleep(0.8)
     else:
         print('Nenhum valor foi informado!', flush = True)
