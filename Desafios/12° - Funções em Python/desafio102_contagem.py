@@ -5,6 +5,14 @@ b) de 10 até 0, de 2 em 2
 c) uma contagem personalizada'''
 from time import sleep
 def contador(i, f, p):
+    '''
+    Faz contagem e mostra na tela.
+
+    paramet i: início da contagem
+    paramet f: fim da contagem
+    paramet p: passo da contagem
+    return: sem retorno
+    '''
     if i > f:
         if p > 0:
             p = -p
@@ -18,7 +26,6 @@ def contador(i, f, p):
         sleep(0.6)
         print(f'{c} ', end='', flush=True)
     print('Fim!')
-
 
 #código:
 contador(1, 10, 1)
