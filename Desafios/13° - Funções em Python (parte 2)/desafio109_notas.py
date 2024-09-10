@@ -7,9 +7,16 @@ A média da turma
 A situação (opcional)
 '''
 def notas(* valores, sit = True):
+    '''-> Cria um dicionário contendo:
+    * o total de valores digitados;
+    * o maior valor da lista de notas;
+    * o menor valor da lista de notas;
+    * a média da lista de notas;
+    * a situação da turma, sendo um parâmetro opcional.
+    '''
     dados = {}
     dados['total'] = len(valores)
-    somatotal = 0
+    '''somatotal = 0
     for c in range(0, len(valores)):
         somatotal += valores[c]
         if c == 0:
@@ -22,14 +29,18 @@ def notas(* valores, sit = True):
     media = somatotal/len(valores)
     dados['Maior'] = maior
     dados['Menor'] = menor
-    dados['Média'] = media
+    dados['Média'] = media'''
+    dados['Maior'] = max(valores)
+    dados['Menor'] = min(valores)
+    dados['Média'] = sum(valores)/len(valores)
     if sit:
-        if media >=5:
+        if dados['Média'] >=5:
             dados['Situação'] = 'Boa!'
         else:
             dados['Situação'] = 'Ruim!'
-    return(dados)
+    return dados
 
 #Programa principal:
 resposta = notas(5.5, 2.5, 1.5, sit = False)
 print(resposta)
+help(notas)
