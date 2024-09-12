@@ -21,6 +21,9 @@ print(' Sistema de ajuda PYhelp')
 print('~'*25)
 while True:
     func = str(input('Digite a função ou biblioteca desejada: ')).strip()
-    ajuda(func)
     if func == 'FIM':
+        print('='*12)
+        print(' Até logo!')
+        print('='*12)
         break
+    ajuda(func)
