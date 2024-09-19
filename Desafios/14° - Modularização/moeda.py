@@ -24,3 +24,6 @@ def metade(valor):
     '''---> Calcula a metade do  parâmetro valor.'''
     valor *= 0.5
     return valor
+
+def moeda(valor):
+    return f'R${valor}'
