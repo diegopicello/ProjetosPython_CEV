@@ -26,4 +26,5 @@ def metade(valor):
     return valor
 
 def moeda(valor):
-    return f'R${valor}'
+    return f'R${valor:.2f}'.replace('.',',')
+print(moeda(200))
