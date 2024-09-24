@@ -16,7 +16,7 @@ def aumentar(valor, tanto, formatação = True):
         novovalor = moeda(valor)
     return novovalor
 
-def diminuir(valor, tanto, formatação = True):
+def diminuir(valor=0 , tanto = 0, formatação = True):
     '''---> Calcula a diminução do valor;
     parâmetro valor: o input que será diminuído;
     parâmetro tanto: a magnitude da diminuição;
@@ -45,4 +45,17 @@ def metade(valor, formatação = True):
     if formatação:
         novovalor = moeda(valor)
     return novovalor
-print(dobro(200))
+
+def resumo(valor, aumento, diminuição):
+    '''--->Resume as funções anteriores em uma única:
+    parâmetro valor: a base de cálculo;
+    parâmetro aumento: taxa do aumento;
+    parâmetro diminuição: taxa do desconto.'''
+    print('='*23)
+    print('  Resumo dos valores:')
+    print('='*23)
+    print(f'Preço analisado: {moeda(valor)};')
+    print(f'Dobro do preço: {dobro(valor)};')
+    print(f'Metade do valor: {metade(valor)};')
+    print(f'Valor reduzido em {diminuição}%: {diminuir(valor, (100-diminuição)/100)};')
+    print(f'Valor aumentado em {aumento}%: {aumentar(valor, aumento/100)};')
