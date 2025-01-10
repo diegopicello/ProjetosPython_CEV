@@ -8,6 +8,9 @@ def leiaint(texto):
         except (ValueError, TypeError):
                 print('ERRO! Digite um número válido.')
                 continue
+        except KeyboardInterrupt:
+             print('Entrada de dados interrompida pelo usuário.')
+             return 0
         else:
              return n  
 
