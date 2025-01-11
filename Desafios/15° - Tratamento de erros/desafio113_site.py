@@ -3,9 +3,8 @@ import urllib
 import urllib.request
 
 try:
-    site = urllib.request.urlopen('http://www.youtube.com.br')
+    urllib.request.urlopen('http://www.youtube.com.br')
 except:
     print('Site não está disponível no momento!')
 else:
     print('Site está funcionando normalmente.')
-    print(site.read)

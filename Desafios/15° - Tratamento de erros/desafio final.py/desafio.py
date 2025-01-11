@@ -1,6 +1,6 @@
 '''Criar um menu em Python usando modularização.'''
 import modulo
 
-modulo.cabeçalho('Menu Principal')
+#modulo.cabecalho('Menu principal')
 modulo.opções('Ver cadastros', 'Cadastrar nova pessoa', 'Sair do sistema')
  
