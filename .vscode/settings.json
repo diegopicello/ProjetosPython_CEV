@@ -1,5 +1,7 @@
 {
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true,
-    "python.linting.pylamaEnabled": false
+    "python.linting.pylamaEnabled": false,
+    "explorer.autoReveal": true,
+    "explorer.compactFolders": false
 }
