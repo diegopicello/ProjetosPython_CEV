@@ -7,5 +7,5 @@ try:
     print('Idade STR: ',idade_str)
     print('Idade FLOAT: ',idade_float)
     print(f'O dobro de {idade_str} é {idade_float*2}.')
-except:
+except ValueError:
     print('Erro: digite um número válido!')
