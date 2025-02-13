@@ -12,7 +12,9 @@ nomelongo = comprimentonome > 6
 
 if nomecurto:
     print(f'{nome} é um nome curto.')
-if nomenormal:
+elif nomenormal:
     print(f'{nome} é um nome normal.')
-if nomelongo:
+elif nomelongo:
     print(f'{nome} é um nome longo.')
+else:
+    print('Por favor, digite nomes válidos.')

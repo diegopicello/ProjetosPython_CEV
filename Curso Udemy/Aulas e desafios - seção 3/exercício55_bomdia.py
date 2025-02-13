@@ -12,9 +12,12 @@ try:
     boanoite = 18 <= horaint <= 23
     if bomdia:
         print('Bom dia!')
-    if boatarde:
+    elif boatarde:
         print('Boa tarde!')
-    if boanoite:
+    elif boanoite:
         print('Boa Noite!')
+    else:
+        print('Não conheço essa hora.')
+
 except (TypeError, ValueError):
-    print('Erro! Digite apenas horas válidas.')
+    print('Erro! Digite apenas números inteiros.')

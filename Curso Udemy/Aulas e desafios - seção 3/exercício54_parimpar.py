@@ -7,7 +7,9 @@ num = input('Digite um número INTEIRO: ')
 
 try:
     numint = int(num)
-    if numint % 2 == 0:
+    par = numint % 2 == 0
+
+    if par:
         print(
             f'O número {numint} é par.'
             )
