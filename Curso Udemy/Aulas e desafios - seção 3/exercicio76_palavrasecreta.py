@@ -13,6 +13,7 @@ na palavra secreta.
     na palavra secreta; exiba *.
 Faça a contagem de tentativas do seu
 usuário.'''
+import os
 
 PALAVRA_SECRETA = 'perfume'
 letra_usuario = ''
@@ -39,6 +40,7 @@ while True:
     palavra_formada = palavrafinal
     print(palavra_formada)
     if palavra_formada == PALAVRA_SECRETA:
+        os.system('cls')
         print('Parabéns, você acertou a palavra.')
         break
 print(f'Você descobriu que a palavra era {PALAVRA_SECRETA} em {tentativas} tentativas válidas.')
