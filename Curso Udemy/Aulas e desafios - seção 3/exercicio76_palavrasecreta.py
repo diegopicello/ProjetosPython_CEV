@@ -17,12 +17,13 @@ usuário.'''
 PALAVRA_SECRETA = 'perfume'
 letra_usuario = ''
 palavra_formada = f'{len(PALAVRA_SECRETA)*'*'}'
-
+tentativas = 0
 while True:
     letra_usuario = input('Digite uma letra: ').strip().lower()
     if len(letra_usuario) > 1:
         print('Por favor, digite apenas uma letra.')
         continue
+    tentativas += 1
     novastr = ''
     for letra in PALAVRA_SECRETA:
         if letra == letra_usuario:
@@ -40,3 +41,4 @@ while True:
     if palavra_formada == PALAVRA_SECRETA:
         print('Parabéns, você acertou a palavra.')
         break
+print(f'Você descobriu que a palavra era {PALAVRA_SECRETA} em {tentativas} tentativas válidas.')
